@@ -20,13 +20,15 @@ namespace DogAgeCalculator
             double idadeEmAnosDeCachorro = Calculator(idade);
             Console.WriteLine($"A sua idade em anos de cachorro é: {idadeEmAnosDeCachorro}");
 
-            if (idade >= 60)
-            {
-                Console.WriteLine("Que gracinha! Já é um vovô cão. AUAU");
-            }
-            else if (idade <= 20)
+            if (idade >= 20)
+
             {
                 Console.WriteLine("Que gracinha! Ainda está dando seus primeiros latidos. AUAU");
+            }
+
+            else if (idade <= 60)
+            {
+                Console.WriteLine("Que gracinha! Já é um vovô cão. AUAU");
             }
 
             Thread.Sleep(4000);
